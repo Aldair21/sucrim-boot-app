@@ -12,22 +12,6 @@
 	--c-background-quaternary: #e9ecf4;
 }
 
-body {
-	line-height: 1.5;
-	min-height: 100vh;
-	font-family: "Be Vietnam Pro", sans-serif;
-	background-color: var(--c-background-secondary);
-	color: var(--c-text-primary);
-	margin: 0;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box !important;
-}
-
-
 html .mat-mdc-slide-toggle.mat-accent {
     --mdc-switch-selected-focus-state-layer-color: var(--c-accent-primary);
     --mdc-switch-selected-handle-color: var(--c-accent-primary);
@@ -40,4 +24,18 @@ html .mat-mdc-slide-toggle.mat-accent {
     --mdc-switch-selected-hover-track-color: var(--c-accent-primary);
     --mdc-switch-selected-pressed-track-color: var(--c-accent-primary);
     --mdc-switch-selected-track-color: var(--c-accent-primary);
+}
+
+body {
+	line-height: 1.5;
+	font-family: "Be Vietnam Pro", sans-serif;
+	color: var(--c-text-primary);
+	margin: 0;
+    min-block-size: 100vh;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box !important;
 }

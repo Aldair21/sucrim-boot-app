@@ -8,28 +8,31 @@ img {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (max-width: 450px) {
+        width: 95%;
+    }
 }
 
 .header {
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 74px;
     border-bottom: 1px solid var(--c-border-primary);
     background-color: var(--c-background-primary);
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-
-    &>a {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10;
+    &>.button-menu {
         display: none;
     }
 
     @media (max-width: 1200px) {
         justify-content: space-between;
 
-        &>a {
+        &>.button-menu {
             display: inline-flex;
         }
     }
@@ -45,24 +48,23 @@ img {
         text-decoration: none;
 
         div {
-            // outline: 2px solid;
+            width: 45px;
+            height: 45px;
             flex-shrink: 0;
             position: relative;
+        }
 
-            &:after {
+        .short-name{
+            display: none;
+        }
+
+        @media (max-width: 320px) {
+            &>.full-name{
+                display: none;
+            }
+
+            &>.short-name{
                 display: block;
-                content: "";
-                position: absolute;
-                left: 0;
-                top: auto;
-                right: 0;
-                bottom: 0;
-                overflow: hidden;
-                height: 50%;
-                border-bottom-left-radius: 8px;
-                border-bottom-right-radius: 8px;
-                background-color: rgba(#fff, 0.2);
-                backdrop-filter: blur(4px);
             }
         }
     }
@@ -117,41 +119,31 @@ img {
     }
 }
 
-.button {
-    font: inherit;
-    color: inherit;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1em;
-    height: 40px;
+.button-menu{
+    background-color: var(--c-background-primary) !important;
+    border: 2px solid var(--c-border-primary) !important;
+	font-family: "Be Vietnam Pro", sans-serif !important;
+    color: var(--c-text-action) !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    padding: 0 1em !important;
+    height: 45px;
     border-radius: 8px;
-    line-height: 1;
-    border: 2px solid var(--c-border-primary);
-    color: var(--c-text-action);
-    font-size: 0.875rem;
+    line-height: 1.5 !important;
     transition: 0.15s ease;
-    background-color: var(--c-background-primary);
 
-    i {
-        margin-right: 0.5rem;
-        font-size: 1.25em;
+    &:hover{
+        border-color: var(--c-accent-primary) !important;
+        color: var(--c-accent-primary) !important;
     }
 
-    span {
-        font-weight: 500;
-    }
-
-    &:hover,
-    &:focus {
-        border-color: var(--c-accent-primary);
-        color: var(--c-accent-primary);
+    @media (max-width: 550px) {
+        flex: auto;
     }
 }
 
 .icon-button {
-    text-decoration: none;
+    cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -160,10 +152,6 @@ img {
     border-radius: 8px;
     color: var(--c-text-action);
     transition: 0.15s ease;
-
-    i {
-        font-size: 1.25em;
-    }
 
     &:focus,
     &:hover {
@@ -180,4 +168,8 @@ img {
     height: 44px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.container-content{
+	background-color: var(--c-background-secondary);
 }

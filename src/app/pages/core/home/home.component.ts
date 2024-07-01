@@ -14,12 +14,6 @@ import { NgOptimizedImage } from '@angular/common'
 export class HomeComponent {
   listBots = [
     {
-      "name": "Zeplin", 
-      "image": "https://i.postimg.cc/T3M0b6n1/zepeling.png",
-      "active": true, 
-      "description": "Collaboration between designers and developers."
-    },
-    {
       "name": "GitHub", 
       "image": "https://i.postimg.cc/MHtcp101/github.png",
       "active": true, 
@@ -54,6 +48,156 @@ export class HomeComponent {
       "image": "https://i.postimg.cc/GttLqWdD/zendesk.png",
       "active": true, 
       "description": "Link and automate Zendesk tickets."
+    },
+    {
+      "name": "Atlassian JIRA", 
+      "image": "https://i.postimg.cc/rwxhZmq5/atlassian-jira.png",
+      "active": false, 
+      "description": "Plan, track, and release great software."
+    },
+    {
+      "name": "Dropbox", 
+      "image": "https://i.postimg.cc/ZYQVT3Rr/dropbox.png",
+      "active": true, 
+      "description": "Everything you need for work, all in one place."
+    },
+    {
+      "name": "Google Chrome", 
+      "image": "https://i.postimg.cc/tCzkRgr9/google.png",
+      "active": true, 
+      "description": "Link your Google account to share bookmarks across your entire team."
+    },
+    {
+      "name": "Discord", 
+      "image": "https://i.postimg.cc/WzxnXRK9/discordia.png",
+      "active": true, 
+      "description": "Keep in touch with your customers without leaving the app."
+    },
+    {
+      "name": "Google Drive", 
+      "image": "https://i.postimg.cc/C5R7GMvB/google-drive.png",
+      "active": false, 
+      "description": "Link your Google account to share files across your entire team."
+    },
+    {
+      "name": "Atlassian JIRA", 
+      "image": "https://i.postimg.cc/rwxhZmq5/atlassian-jira.png",
+      "active": false, 
+      "description": "Plan, track, and release great software."
+    },
+    {
+      "name": "Dropbox", 
+      "image": "https://i.postimg.cc/ZYQVT3Rr/dropbox.png",
+      "active": true, 
+      "description": "Everything you need for work, all in one place."
+    },
+    {
+      "name": "Google Chrome", 
+      "image": "https://i.postimg.cc/tCzkRgr9/google.png",
+      "active": true, 
+      "description": "Link your Google account to share bookmarks across your entire team."
+    },
+    {
+      "name": "Discord", 
+      "image": "https://i.postimg.cc/WzxnXRK9/discordia.png",
+      "active": true, 
+      "description": "Keep in touch with your customers without leaving the app."
+    },
+    {
+      "name": "Google Drive", 
+      "image": "https://i.postimg.cc/C5R7GMvB/google-drive.png",
+      "active": false, 
+      "description": "Link your Google account to share files across your entire team."
+    },
+    {
+      "name": "Atlassian JIRA", 
+      "image": "https://i.postimg.cc/rwxhZmq5/atlassian-jira.png",
+      "active": false, 
+      "description": "Plan, track, and release great software."
+    },
+    {
+      "name": "Dropbox", 
+      "image": "https://i.postimg.cc/ZYQVT3Rr/dropbox.png",
+      "active": true, 
+      "description": "Everything you need for work, all in one place."
+    },
+    {
+      "name": "Google Chrome", 
+      "image": "https://i.postimg.cc/tCzkRgr9/google.png",
+      "active": true, 
+      "description": "Link your Google account to share bookmarks across your entire team."
+    },
+    {
+      "name": "Discord", 
+      "image": "https://i.postimg.cc/WzxnXRK9/discordia.png",
+      "active": true, 
+      "description": "Keep in touch with your customers without leaving the app."
+    },
+    {
+      "name": "Google Drive", 
+      "image": "https://i.postimg.cc/C5R7GMvB/google-drive.png",
+      "active": false, 
+      "description": "Link your Google account to share files across your entire team."
+    },
+    {
+      "name": "Atlassian JIRA", 
+      "image": "https://i.postimg.cc/rwxhZmq5/atlassian-jira.png",
+      "active": false, 
+      "description": "Plan, track, and release great software."
+    },
+    {
+      "name": "Dropbox", 
+      "image": "https://i.postimg.cc/ZYQVT3Rr/dropbox.png",
+      "active": true, 
+      "description": "Everything you need for work, all in one place."
+    },
+    {
+      "name": "Google Chrome", 
+      "image": "https://i.postimg.cc/tCzkRgr9/google.png",
+      "active": true, 
+      "description": "Link your Google account to share bookmarks across your entire team."
+    },
+    {
+      "name": "Discord", 
+      "image": "https://i.postimg.cc/WzxnXRK9/discordia.png",
+      "active": true, 
+      "description": "Keep in touch with your customers without leaving the app."
+    },
+    {
+      "name": "Google Drive", 
+      "image": "https://i.postimg.cc/C5R7GMvB/google-drive.png",
+      "active": false, 
+      "description": "Link your Google account to share files across your entire team."
+    },
+    {
+      "name": "Atlassian JIRA", 
+      "image": "https://i.postimg.cc/rwxhZmq5/atlassian-jira.png",
+      "active": false, 
+      "description": "Plan, track, and release great software."
+    },
+    {
+      "name": "Dropbox", 
+      "image": "https://i.postimg.cc/ZYQVT3Rr/dropbox.png",
+      "active": true, 
+      "description": "Everything you need for work, all in one place."
+    },
+    {
+      "name": "Google Chrome", 
+      "image": "https://i.postimg.cc/tCzkRgr9/google.png",
+      "active": true, 
+      "description": "Link your Google account to share bookmarks across your entire team."
+    },
+    {
+      "name": "Discord", 
+      "image": "https://i.postimg.cc/WzxnXRK9/discordia.png",
+      "active": true, 
+      "description": "Keep in touch with your customers without leaving the app."
+    },
+    {
+      "name": "Google Drive", 
+      "image": "https://i.postimg.cc/C5R7GMvB/google-drive.png",
+      "active": false, 
+      "description": "Link your Google account to share files across your entire team."
     },
     {
       "name": "Atlassian JIRA", 

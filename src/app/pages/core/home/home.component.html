@@ -1,50 +1,49 @@
+<div style="position: relative;">
+    <div class="header-title">
+    <h1>SuCrImBoT</h1>
+    <p>Con SucrimBot, crea bots personalizados para WhatsApp en solo minutos.</p>
+</div>
+<div class="header-actions">
+    <div class="actions">
+        <button mat-button class="button-add" color="primary">
+            <mat-icon >add</mat-icon>
+            Crear bot
+        </button>
 
-<main class="main">
-    <div class="responsive-wrapper">
-        <div class="header-title">
-            <h1>SuCrImBoT</h1>
-            <p>Con SucrimBot, crea bots personalizados para WhatsApp en solo minutos.</p>
-        </div>
-        <div class="header-actions">
-            <div class="actions">
-                <a href="" class="button">
-                    <mat-icon style="margin-right: 5px;">add</mat-icon>
-                    <span>Crear bot</span>
-                </a>
-                <a href="" class="button">
-                    <mat-icon style="margin-right: 5px;">tune</mat-icon>
-                    <span>Filters</span>
-                </a>
-            </div>
-            
-            <div class="search">
-                <input type="text" placeholder="Busqueda" />
-                <button mat-icon-button>
-                    <mat-icon fontIcon="search"></mat-icon>
-                </button>
-            </div>
-        </div>
-        <div class="content-main">
-            <div class="card-grid">
-               @for (item of listBots; track $index) {
-                <article class="card">
-                    <div class="card-header">
-                        <div>
-                            <span><img [ngSrc]="item.image" [width]="150" [height]="150"/></span>
-                            <h3>{{item.name}}</h3>
-                        </div>
-                        <mat-slide-toggle [checked]="item.active">
-                        </mat-slide-toggle>
-                    </div>
-                    <div class="card-body">
-                        <p>{{item.description}}</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#">View integration</a>
-                    </div>
-                </article>
-               }
-            </div>
-        </div>
+        <button mat-button class="button-filters" color="primary">
+            <mat-icon >tune</mat-icon>
+            Filters
+        </button>
     </div>
-</main>
+
+    <div class="search">
+        <input type="text" placeholder="Busqueda" />
+        <button mat-icon-button>
+            <mat-icon fontIcon="search"></mat-icon>
+        </button>
+    </div>
+</div>
+<div class="content-main">
+    <div class="card-grid">
+        @for (item of listBots; track $index) {
+        <article class="card">
+            <div class="card-header">
+                <div>
+                    <span><img [ngSrc]="item.image" [width]="80" [height]="80" alt="Logo"/></span>
+                    <h3>{{item.name}}</h3>
+                </div>
+                <mat-slide-toggle [checked]="item.active">
+                </mat-slide-toggle>
+            </div>
+            <div class="card-body">
+                <p>{{item.description}}</p>
+            </div>
+            <div class="card-footer">
+                <a href="#">View integration</a>
+            </div>
+        </article>
+        }
+    </div>
+</div>
+
+</div>
