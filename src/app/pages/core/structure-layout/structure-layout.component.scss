@@ -14,11 +14,12 @@ img {
     }
 }
 
-.header {
+header {
     margin: 0 auto;
+    padding: 0 4px;
     display: flex;
     align-items: center;
-    height: 74px;
+    height: 70px;
     border-bottom: 1px solid var(--c-border-primary);
     background-color: var(--c-background-primary);
     position: sticky;

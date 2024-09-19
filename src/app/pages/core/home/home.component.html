@@ -1,49 +1,49 @@
 <div style="position: relative;">
     <div class="header-title">
-    <h1>SuCrImBoT</h1>
-    <p>Con SucrimBot, crea bots personalizados para WhatsApp en solo minutos.</p>
-</div>
-<div class="header-actions">
-    <div class="actions">
-        <button mat-button class="button-add" color="primary">
-            <mat-icon >add</mat-icon>
-            Crear bot
-        </button>
-
-        <button mat-button class="button-filters" color="primary">
-            <mat-icon >tune</mat-icon>
-            Filters
-        </button>
+        <h1>SuCrImBoT</h1>
+        <p>Con SucrimBot, crea bots personalizados para WhatsApp en solo minutos.</p>
     </div>
+    <div class="header-actions">
+        <div class="actions">
+            <button mat-button class="button-add" color="primary">
+                <mat-icon>add</mat-icon>
+                Crear bot
+            </button>
 
-    <div class="search">
-        <input type="text" placeholder="Busqueda" />
-        <button mat-icon-button>
-            <mat-icon fontIcon="search"></mat-icon>
-        </button>
+            <button mat-button class="button-filters" color="primary">
+                <mat-icon>tune</mat-icon>
+                Filters
+            </button>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Busqueda" />
+            <button mat-icon-button>
+                <mat-icon fontIcon="search"></mat-icon>
+            </button>
+        </div>
     </div>
-</div>
-<div class="content-main">
-    <div class="card-grid">
-        @for (item of listBots; track $index) {
-        <article class="card">
-            <div class="card-header">
-                <div>
-                    <span><img [ngSrc]="item.image" [width]="80" [height]="80" alt="Logo"/></span>
-                    <h3>{{item.name}}</h3>
+    <div class="content-main">
+        <div class="card-grid">
+            @for (item of listBots; track $index) {
+            <article class="card">
+                <div class="card-header">
+                    <div>
+                        <span><img [ngSrc]="item.image" [width]="80" [height]="80" alt="Logo" /></span>
+                        <h3>{{item.name}}</h3>
+                    </div>
+                    <mat-slide-toggle [checked]="item.active">
+                    </mat-slide-toggle>
                 </div>
-                <mat-slide-toggle [checked]="item.active">
-                </mat-slide-toggle>
-            </div>
-            <div class="card-body">
-                <p>{{item.description}}</p>
-            </div>
-            <div class="card-footer">
-                <a href="#">View integration</a>
-            </div>
-        </article>
-        }
+                <div class="card-body">
+                    <p>{{item.description}}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#">View integration</a>
+                </div>
+            </article>
+            }
+        </div>
     </div>
-</div>
 
 </div>

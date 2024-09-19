@@ -1,0 +1,24 @@
+<mat-sidenav-container class="app-container">
+    <mat-sidenav #sidenav opened="true" mode="side">
+        <div class="container-drags-drawflow">
+            @for (block of blocks; track $index) {
+                <article class="drag-block" draggable="true">
+                    <div class="block-header">
+                        <i class= "{{block.icon}}" ></i>
+                    </div>
+                    <div class="block-body">
+                        <h3>{{block.name}}</h3>
+                    </div>
+                </article>
+            }
+        </div>
+        
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <button mat-mini-fab aria-label="button" (click)="sidenav.toggle()"
+            [ngClass]="sidenav.opened ? 'close' : 'open'" class="button-sidenav"
+            [color]="sidenav.opened ? 'warn' : 'primary'">
+            <mat-icon>{{ sidenav.opened ? 'close' : 'arrow_forward_ios' }}</mat-icon>
+        </button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
